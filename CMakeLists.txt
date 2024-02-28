@@ -22,7 +22,6 @@ else ()
     message(FATAL_ERROR, "Cannot find OpenSSL library")
 endif ()
 
-set(CMAKE_CXX_FLAGS -pthread)
 add_executable(
     server
     src/app/server.cc
@@ -44,6 +43,7 @@ add_executable(
 )
 target_link_libraries(client OpenSSL::SSL)
 
+set(CMAKE_CXX_FLAGS -pthread)
 add_executable(
     testIOMultiplex
     src/app/testIOMultiplex.cc
