@@ -50,7 +50,7 @@ The generated binaries are in the directory `bin`. Directory `contaienrs` and `r
 ### Demo
 1. generate a 1GB file
     ```
-    mkdir dataset && cd dataset
+    cd dataset
     dd if=/dev/urandom of=test-1G bs=1M count=1000
     cp test-1G test-1G-a
     ```
