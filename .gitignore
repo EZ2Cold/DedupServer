@@ -1,5 +1,5 @@
 .vscode
-!build/
 build/*
+!build/.gitkeep
 dataset/*
-!dataset/
+!dataset/.gitkeep

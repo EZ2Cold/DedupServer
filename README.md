@@ -18,9 +18,9 @@ This project implements a prototype of a cloud storage server that performs clie
     );
     ```
 2. modify the `address`, `user` and `passwd` to that of your MYSQL in the file `DedupServer.cc`
-3. create a build directory
+3. build the project
     ```
-    mkdir build && cd build
+    cd build
     cmake ..
     make
     ```
